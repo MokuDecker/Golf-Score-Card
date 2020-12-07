@@ -8,6 +8,10 @@ document.querySelector('#par').value
 
 document.querySelector('#strokes').value
 
+// Should I be using .getElementsById instead?
+var par = document.getElementById('par');
+var strokes = document.getElementById('strokes');
+
 // Here is my function
 function golfScore(par, strokes) {
     if (strokes == 1) {
@@ -32,7 +36,8 @@ function golfScore(par, strokes) {
   function produceMessage(){
     var msg= golfScore();
     return msg;
-
+  }
+  
   window.alert(golfScore());
   document.write(golfScore());
   console.log(golfScore(par,strokes));
