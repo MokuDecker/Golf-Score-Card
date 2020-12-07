@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><h1>Golf Score Card</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Score Card</title>
+</head>
+
+<style>
+    body {
+        max-height: auto;
+        max-width: 300px;
+        margin: auto;
+        font-size: larger;
+        background-image: url("https://wallpapercave.com/wp/e8YwQt9.jpg");
+    }   
+    
+</style>
+
+<body>
+    <form action="golf1.js" method="GET">
+        <div>
+            <lable>
+                Par
+                <input type="text" name="Par" id="par" required>
+            </lable>
+        </div>
+
+        <div>
+            <label>
+                Stroke
+                <input type="text" name="Stroke" id="strokes" required>
+            </label>
+        </div>
+        <button type="reset">Reset</button>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>
+        <script>document.write(produceMessage())</script></div>
+
+</body>
+</html>
